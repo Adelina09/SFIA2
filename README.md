@@ -1,6 +1,6 @@
 # Random Story Generator
 
-Projet aiming to return to the user a random short story comprised of a beginning and an end, where the sotries are put together with the use of microservices.
+Projet aiming to return to the user a random short story comprised of a beginning and an end, where the stories are put together with the aid of microservices.
 
 ## Index
 
