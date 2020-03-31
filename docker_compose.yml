@@ -3,28 +3,36 @@ version: "3"
 services:
 
     service1:
-        image: microservice1:4
+        build: 
+            context: ./Service1/
+            dockerfile: Dockerfile
         ports: 
             - "5000:5000"
         networks:
             - main_network
 
     service2:
-        image: microservice2:3
+        build: 
+            context: ./Service2/
+            dockerfile: Dockerfile
         ports: 
             - "5001:5001"
         networks:
             - main_network
 
     service3:
-        image: microservice3:3
+        build: 
+            context: ./Service3/
+            dockerfile: Dockerfile
         ports: 
             - "5002:5002"
         networks:
             - main_network
 
     service4:
-        image: microservice4:4
+        build: 
+            context: ./Service4/
+            dockerfile: Dockerfile
         ports: 
             - "5003:5003"
         networks:
