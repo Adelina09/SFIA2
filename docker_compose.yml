@@ -3,41 +3,40 @@ version: "3"
 services:
 
     service1:
-        build: 
-            context: ./Service1/
-            dockerfile: Dockerfile
-        ports: 
+        image: adelina09/service1
+        ports:
             - "5000:5000"
         networks:
             - main_network
+        deploy:
+            replicas: 3
 
     service2:
-        build: 
-            context: ./Service2/
-            dockerfile: Dockerfile
+        image: adelina09/service2
         ports: 
             - "5001:5001"
         networks:
             - main_network
+        deploy:
+            replicas: 3
 
     service3:
-        build: 
-            context: ./Service3/
-            dockerfile: Dockerfile
+        image: adelina09/service3
         ports: 
             - "5002:5002"
         networks:
             - main_network
+        deploy:
+            replicas: 3
 
     service4:
-        build: 
-            context: ./Service4/
-            dockerfile: Dockerfile
+        image: adelina09/service4
         ports: 
             - "5003:5003"
         networks:
             - main_network
-
+        deploy:
+            replicas: 3
 networks:
     main_network:
-        driver: bridge
+        driver: overlay
