@@ -6,6 +6,11 @@ services:
         image: adelina09/service1
         ports:
             - "5000:5000"
+        environment:
+            - MYSQLHOST=${MYSQLHOST}
+            - MYSQLUSER=${MYSQLUSER}
+            - MYSQLPASSWORD=${MYSQLPASSWORD}
+            - MYSQLDB=${MYSQLDB}
         networks:
             - main_network
         deploy:
