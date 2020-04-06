@@ -15,7 +15,7 @@ mysql=MySQL(app)
     
 @app.route('/', methods=['GET', 'POST'])
 def home():
-    response = requests.get('http://Service4:5003/randomword')
+    response = requests.get('http://localhost:5003/randomword')
     story = response.text      
     print(story) 
     cur = mysql.connection.cursor()
