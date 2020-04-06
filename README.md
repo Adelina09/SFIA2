@@ -1,6 +1,6 @@
-# Random Story Generator
+# Short Story Idea Generator
 
-Projet aiming to return to the user a random short story comprised of a beginning and an end, where the stories are put together with the aid of microservices.
+Projet aiming to return to the user a random short story idea, with the aid of microservices. 
 
 ## Index
 
@@ -9,7 +9,6 @@ Projet aiming to return to the user a random short story comprised of a beginnin
 3. [Risk Assessment](#riskassessment)
 
 4. [Architecture](#architecture)
-   + [Entity Relationship Diagrams(ERDs)](#ERD)
    
 5. [Testing](#testing)
 
@@ -38,7 +37,7 @@ As shown in  the figure below, Trello has been used to keep track of the progres
 
 The project started by defining the user stories, which have been added as a reminder of the project scope and its deliverables, hence serving the role of product backlog as well. 
 
-The project  itself has been split in 4 major sprints(lasting a week each). In order to make tracking of progress easier and to monitor the time left until the deadline, the sprints have been assigned different colours starting with green, which represents the first sprint and ending with red, which represents the last sprint. The image below represents the Trello board at the beginning of the project, right after the sprints have been divided into individual tasks. 
+The project  itself has been split in 3 major sprints. In order to make tracking of progress easier and to monitor the time left until the deadline, the sprints have been assigned different colours starting with green, which represents the first sprint and ending with red, which represents the last sprint. The image below represents the Trello board at the beginning of the project, right after the sprints have been divided into individual tasks. 
 
  <a name="riskassessment"></a>
  ## 3. Risk Assessment
