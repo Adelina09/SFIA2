@@ -8,6 +8,13 @@ Projet aiming to return to the user a random short story idea, with the aid of m
 2. [Trello Board](#trello)
 3. [Risk Assessment](#riskassessment)
 
+   3.1. [Initial Risk Assessment](#initialrisk)
+   
+   3.2. [Final Risk Assessment](#finalrisk)
+   
+   3.3. [Risk Assessment Matrix](#riskmatrix)
+
+
 4. [Architecture](#architecture)
    
 5. [Testing](#testing)
@@ -52,6 +59,9 @@ As the project has advanced, the tasks started moving across the board from left
 
  <a name="riskassessment"></a>
  ## 3. Risk Assessment
+  <a name="initialrisk"></a>
+ ## 3.1. Initial Risk Assessment
+The project started by creating an initial risk assessment as shown below. As the project went on, new risks started appearing as well as current risks changing their likelyhood of occurrence at it got closer to the end of the project.
  
 | Risk ID       | Risk Description   | Mitigation     | Likelyhood of occurrence |  Possible Impact  | Impact at occurrence| 
 |:-------------:|:------------------:|:--------------:|:------------------------:|:-----------------:|:-------------------:|
@@ -61,4 +71,24 @@ As the project has advanced, the tasks started moving across the board from left
 | 4    | Exhausting the free trial offered by GCP | Keep track of all the instances used, making sure to delete/terminate the ones that are not useful for the project, and stopping the instances when not in use. | 3 | Not being able to deliver parts or the full project, due to the lack of access to the free trial. | 5 |
 | 5    | Difficulty understanding the material  | Pay attention to the material taught on a daily basis. Follow up on the supplemental materials provided, and practice when given the opportunity. Keep on top of the work by using the video tutorials and the courseware. | 3 | Delivering a poor project due to not understanding the brief/ not knowing how to execute the project. | 4|
 | 6    | Not being able to complete the project in time | Keeping track of the project management timeline using the Trello board, making sure to complete/start at least a task daily.  | 2 | Falling behind with the weekly tasks, randomly working on different other parts of the project, not boxing off particular sections of it, hence not meeting the agile principles. | 5|
+
+
+
+  <a name="finalrisk"></a>
+ ## 3.2. Final Risk Assessment
+ 
+| Risk ID       | Risk Description   | Mitigation     | Likelyhood of occurrence |  Possible Impact  | Impact at occurrence| 
+|:-------------:|:------------------:|:--------------:|:------------------------:|:-----------------:|:-------------------:|
+| 1    |Unstable internet connection | Work on small, individual parts of the project, to avoid being dependent on the internet connection. When unavailable, work on the project management part, or documentation. | 4 | Not being able to deliver the project in time, pushing back some of the tasks that require internet. | 3 |
+| 2    | Data compromised on the workstation | Make frequent back ups of the project and ensure computer is locked when leaving the station unattended. Ensure version controlling any changes at the end of each day.  | 2 | Having to start the project/parts of the project from scratch, missing out on possible crucial information previously included. | 4|
+| 3    | Security breach of the database | Ensure a strong password is selected, encrypt the data and set up strong firewall rules.  | 3 | Not much impact, as just the results of the randomiser application are stored in the database. | 1|
+| 4    | Exhausting the free trial offered by GCP | Keep track of all the instances used, making sure to delete/terminate the ones that are not useful for the project, and stopping the instances when not in use.  | 5 | Not being able to deliver parts or the full project, due to the lack of access to the free trial. | 5|
+| 5    | Difficulty understanding the material | Pay attention to the material taught on a daily basis. Follow up on the supplemental materials provided, and practice when given the opportunity. Keep on top of the work by using the video tutorials and the courseware.  | 3 | Delivering a poor project due to not understanding the brief/ not knowing how to execute the project. | 4|
+| 6    | Not being able to complete the project in time | Keeping track of the project management timeline using the Trello board, making sure to complete/start at least a task daily.  | 3 | Falling behind with the weekly tasks, randomly working on different other parts of the project, not boxing off particular sections of it, hence not meeting the agile principles. | 5|
 | 7    | Falling ill | Work from home, do not leave the house unless necessary. Wash hands immediately after entering the house, disinfect the groceries if necessary.  | 4 | Not being able to work, lacking focus, potentially getting admitted into hospital, and therefore not being able to deliver a project. | 5|
+| 8    | GCP connection issues | Work on the database/virtual machines part of the project in the morning, at hours that it is less likely that traffic is high. Focus on documentation during the day, and resume the work in the afternoon.   | 4 | Not being able to work on the main parts of the project, not being able to get help from the trainer regarding the more complicated parts of it. Delivering only the documentation part, hence not being able to pass the project. | 4|
+ 
+ 
+ 
+ 
+ 
