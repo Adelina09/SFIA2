@@ -33,11 +33,22 @@ Projet aiming to return to the user a random short story idea, with the aid of m
 <a name="trello"></a> 
 ## 2. Trello Board
 
-As shown in  the figure below, Trello has been used to keep track of the progress across its duration.
+As shown below, Trello has been used to keep track of the progress across its duration. The MoSCow Prioritisation Method has been used in order to identify key areas of development, thus allowing for a functional product to be presented as early as possible, increasing the complexity of the project once the minimum viable product is met. 
 
 The project started by defining the user stories, which have been added as a reminder of the project scope and its deliverables, hence serving the role of product backlog as well. 
 
-The project  itself has been split in 3 major sprints. In order to make tracking of progress easier and to monitor the time left until the deadline, the sprints have been assigned different colours starting with green, which represents the first sprint and ending with red, which represents the last sprint. The image below represents the Trello board at the beginning of the project, right after the sprints have been divided into individual tasks. 
+The project itself has been split in just one sprint, as it was only meant to be a three week long process. The image below represents the Trello board at the beginning of the project. It can be observed in the right side of the board that there are no bugs present in the project at this stage.
+
+![alt text][trello1]
+ 
+[trello1]:  https://i.imgur.com/5n2onCw.png " Initial Trello Board"
+
+As the project has advanced, the tasks started moving across the board from left to right, until they eventually all reached the 'Done' column. Bugs column has also been slowly populated by the various issues that arose during the duration of the project. This final state of the board can be observed in the figure below. 
+
+![alt text][trello2]
+ 
+[trello2]:  https://i.imgur.com/cAu3URT.png " Initial Trello Board"
+
 
  <a name="riskassessment"></a>
  ## 3. Risk Assessment
