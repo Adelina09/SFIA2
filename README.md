@@ -14,7 +14,6 @@ Projet aiming to return to the user a random short story idea, with the aid of m
    
    3.3. [Risk Assessment Matrix](#riskmatrix)
 
-
 4. [Architecture](#architecture)
    
 5. [Testing](#testing)
@@ -73,7 +72,6 @@ The project started by creating an initial risk assessment as shown below. As th
 | 6    | Not being able to complete the project in time | Keeping track of the project management timeline using the Trello board, making sure to complete/start at least a task daily.  | 2 | Falling behind with the weekly tasks, randomly working on different other parts of the project, not boxing off particular sections of it, hence not meeting the agile principles. | 5|
 
 
-
   <a name="finalrisk"></a>
  ## 3.2. Final Risk Assessment
  
@@ -89,6 +87,9 @@ The project started by creating an initial risk assessment as shown below. As th
 | 8    | GCP connection issues | Work on the database/virtual machines part of the project in the morning, at hours that it is less likely that traffic is high. Focus on documentation during the day, and resume the work in the afternoon.   | 4 | Not being able to work on the main parts of the project, not being able to get help from the trainer regarding the more complicated parts of it. Delivering only the documentation part, hence not being able to pass the project. | 4|
  
  
+  <a name="riskmatrix"></a>
+ ## 3.3. Risk Assessment Matrix
  
+A risk matrix is a matrix that is used during the risk assessment process to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making.
  
- 
+INSERT RISK ASSESSMENT MATRIX HERE 
