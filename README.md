@@ -15,6 +15,9 @@ Projet aiming to return to the user a random short story idea, with the aid of m
    3.3. [Risk Assessment Matrix](#riskmatrix)
 
 4. [Architecture](#architecture)
+
+   4.1. [Feature Branch Model](#featurebranchmodel)
+
    
 5. [Testing](#testing)
 
@@ -93,3 +96,9 @@ The project started by creating an initial risk assessment as shown below. As th
 A risk matrix is a matrix that is used during the risk assessment process to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making.
  
 INSERT RISK ASSESSMENT MATRIX HERE 
+
+  <a name="architecture"></a>
+ ## 4. Architecture
+ 
+   <a name="featurebranchmodel"></a>
+ ## 4.1 Feature Branch Model
