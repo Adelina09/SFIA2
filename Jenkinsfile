@@ -18,14 +18,7 @@ pipeline {
                     sh 'chmod +x ./script/*'
                     sh './script/docker.sh'
                 }
-            }
-            
-            stage('Testing Environment'){
-            agent {label 'manager_node'}
-            steps{
-                sh './script/test.sh'
-            }
-        }
+            }       
         
     }
 }
