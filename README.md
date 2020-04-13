@@ -37,6 +37,8 @@ Projet aiming to return to the user a random short story idea, with the aid of m
    
    7.3. [Future Improvements](#improvements)
 
+8. [Installation guide](#installation)
+
 
 <a name="brief"></a>
 ## 1. The Brief 
@@ -68,6 +70,8 @@ As the project has advanced, the tasks started moving across the board from left
  
 [trello2]:  https://i.imgur.com/cAu3URT.png " Initial Trello Board"
 
+
+Further tracking of the project progress and its results has been performed separately, on paper(for convinience). Due to the limitations of this file, if evidence is needed, please request it personally. 
 
  <a name="riskassessment"></a>
  ## 3. Risk Assessment
@@ -103,7 +107,7 @@ The project started by creating an initial risk assessment as shown below. As th
   <a name="riskmatrix"></a>
  ## 3.3. Risk Assessment Matrix
  
-A risk matrix is a matrix that is used during the risk assessment process to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making.
+A risk matrix is a matrix that is used during the risk assessment process to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making. 
  
 ![alt text][riskmatrix]
  
@@ -182,6 +186,14 @@ A risk matrix is a matrix that is used during the risk assessment process to def
    <a name="design"></a>
  ## 6. Front end design 
  
+ The front end design of this project is simplistic, as seen in the image below. 
+ 
+   ![alt text][frontend]
+ 
+[frontend]:    https://i.imgur.com/jaCEkqi.png "Front end design"
+
+The button on the right hand side of the page gives the user the ability to generate a new short story idea. Every time the button is pressed, the entry is recorded in a database and saved as a reminder of all previous ideas. 
+As a future update on the front end, it is desired that the content saved in the database to be deplayed to the user, as a reminder of the previous stories they might have started to write. A thematic background is also desired to be implemented, along with a user option to add their name to the story, hence to receive a personalised story. 
    
 
    
@@ -214,6 +226,26 @@ A risk matrix is a matrix that is used during the risk assessment process to def
   * NGINX implementation
   * CRUD implementation 
   * Selenium testing 
-  
-  
-    
+ 
+
+    <a name="installation"></a>
+ ## 8. Installation guide 
+### Before Installation
+
+  * Google Cloud Platform account 
+  * Git Hub account
+
+### Creating the virtual machines
+Navigate to GCP's Compute Engine menu, followed by VM Instances menu. From here, you will be creating one virtual machine with a distinct name, e.g. manager and the operating system set to UBUNTU 18.04. Make sure to tick the "allow http traffic" box in the firewall section before you create the machine. Now SSH into the newly created machine, and create a set of ssh keys using the "ssh-keygen" command. Copy the content of the public key file(id_rsa.pub) and keep it in a safe place for further use.
+
+Whilst you are still inside the virtual machine, install Jenkins using this [link](https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/). When done, access the public ip address in a browser, folowed by ":8080". Now you have just accessed the Jenkins user interface. From here, follow the instructions on screen and set up Jenkins using your credentials. 
+
+The final thing to be installed on this virtual machine is Ansible. Follow this [link](https://www.howtoforge.com/how-to-install-and-configure-ansible-on-ubuntu-1804/), and then you are done. 
+
+Now go back to GCP and create another virtual machine, with the same UBUNTU 18.04 operating sysyem, but this time name it master. After its creation, navigate to the VPC Network menu on GCP, followed by Firewall Rules menu. Here we are setting up the firewall rules needed for the application to work. 
+
+Create a new firewall rule named jenkins, and navigate to the part where it allows you to set specified protocols and ports. Here you tick the first option, and you set it to 8080 to allow jenkins to function on your other machines. Create one more firewall rule named flaskapp and for this one allow a range of ip addressess, from 5000 to 5004. 
+
+Now navigate back to your master VM, press edit, and make sure to add your firewall rules to the network tags section. Before you press save, bring back the public key saved from before, and add it in the SSH keys section. Now save the VM. Before you go back to the main VM list, in the top right corner you can press "create similar" and now you have a third VM, this one having the same set up as the previous one. Call this one worker. 
+
+Once all your VMs are set up, go into your master node, and clone down the repository found at this [address](...)
