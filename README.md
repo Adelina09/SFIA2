@@ -227,6 +227,12 @@ As a future update on the front end, it is desired that the content saved in the
   * NGINX implementation
   * CRUD implementation 
   * Selenium testing 
+  
+  A Trello board has been created for the future improvements. As it's not part of the current project, hence not part of the current sprint, it is expected that the implementation of the improvements would take a full sprint to complete. This can be seen in the image below. 
+  
+  ![alt text][newtrello]
+ 
+[newtrello]:    https://i.imgur.com/8tsyBEJ.png "Improvements Sprint"
  
 
     <a name="installation"></a>
