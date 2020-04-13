@@ -95,10 +95,21 @@ The project started by creating an initial risk assessment as shown below. As th
  
 A risk matrix is a matrix that is used during the risk assessment process to define the level of risk by considering the category of probability or likelihood against the category of consequence severity. This is a simple mechanism to increase visibility of risks and assist management decision making.
  
-INSERT RISK ASSESSMENT MATRIX HERE 
+![alt text][riskmatrix]
+ 
+[riskmatrix]:  https://i.imgur.com/hKCCSIJ.png " Risk Assessment Matrix"
+
 
   <a name="architecture"></a>
  ## 4. Architecture
  
    <a name="featurebranchmodel"></a>
  ## 4.1 Feature Branch Model
+ The project consists of 2 branches, to ensure code quality across the duration of the project. These branches can be observed in the figure below, the main one being the master branch, and the one on which the new features were added before the final delivery of the project, the developer branch. 
+ 
+ ![alt text][featurebranch]
+ 
+[featurebranch]:   https://i.imgur.com/DGnFz6i.png " Feature Branch Model"
+
+ The project starts at point A, with a basic architecture of the four services on the master branch as a clean starting point. The developer branch is then created at point B, and all the features are then created on this branch, up until point C, where it is merged back into the master branch. Point D finally represents the final stage of the process. 
+ 
