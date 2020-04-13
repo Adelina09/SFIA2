@@ -21,6 +21,8 @@ Projet aiming to return to the user a random short story idea, with the aid of m
    4.2. [Service Architecture Diagram](#servicediagram)
    
    4.3. [Deployment](#deployment)
+   
+   4.4. [Technologies Used](#technologies)
 
    
 5. [Testing](#testing)
@@ -138,9 +140,48 @@ A risk matrix is a matrix that is used during the risk assessment process to def
  
 [VMs]:  https://i.imgur.com/tqVx3GB.png "VM architecture"
 
-  
+  The application has initially been constructed on the master node, where the testing of the application has also been performed. After having a simple model of the application, docker has been installed on the local machine, and images of the services have been created and deployed on Docker Hub. The Docker compose file has been created, services deployed, followed by the creation of a docker stack. This has connected the master node to a worker node, and thus the services have been deployed between the two nodes to ensure redundancy. This has all then been automated using Jenkins on the manager node. To ensure that all the nodes have the necessary dependencies installed, Ansible has also been added to the manager node. Thus Jenkins deploys Ansible across the other two nodes and starts the application. 
+  The process is shown in the diagram below. 
    
-    
+ INSERT DIAGRAM HERE
+ 
+ 
+   <a name="technologies"></a>
+  ## 4.4. Technologies Used
+  
+  * GitHub: Version Control System
+  * Jenkins: Continuous Intergration Server
+  * Google Cloud Services: Live Environment + SQL Database Host
+  * Visual Studio Code: IDE for frontend and backend development
+  * Trello: Kanban board and Project tracking
+  * Docker: Containerisation
+  * Docker Swarm + Stack: Orchestration
+  * Dockerhub: Version Control for Docker Images and Containers
+  * Ansible: Configuration Management
+
+   
+     <a name="testing"></a>
+ ## 5.Testing
+   The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The image below represents the final test coverage of the application. It can be observed that the coverage stops at only 38%. It is believed that this is due to a combination of a high number of libraries tested and a limited amount of test functions implemented. 
+   
+   ![alt text][tests]
+ 
+[tests]:        https://i.imgur.com/Wa3S5Ju.png "Successful tests"
+
+   
+   ![alt text][coverage]
+ 
+[coverage]:     https://i.imgur.com/qV8poZl.png "Coverage report"
+   
+   
+   Due to various complications that arose throughout the duration of the project, the testing phase is not implemented within Jenkins. It has been conducted on the local machine only, this being one of the future improvements feature. 
+   
+   
+   <a name="design"></a>
+ ## 6. Front end design 
+ 
+   
+
    
    
    
