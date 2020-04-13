@@ -32,7 +32,9 @@ Projet aiming to return to the user a random short story idea, with the aid of m
 7. [Retrospective](#retrospective)
 
    7.1. [What Went Well?](#good)
+   
    7.2. [What Went Wrong?](#bad)
+   
    7.3. [Future Improvements](#improvements)
 
 
@@ -183,6 +185,35 @@ A risk matrix is a matrix that is used during the risk assessment process to def
    
 
    
+ <a name="retrospective"></a>
+ ## 7. Retrospective 
+  <a name="good"></a>
+ ## 7.1. What Went Well
+ 
+   * Project complete in time 
+   * Implemented Jenkins
+   * Deployed Docker Swarm with little to no issues
+   * Deployed the application on three different VMs, having Jenkins and Ansible separate from the rest of the application
    
    
+     <a name="bad"></a>
+ ## 7.2. What Went Wrong
    
+   * Major issues when trying to SSH into the other VMs using Jenkins
+   * Bank Holiday Weekend made it hard to ask for help with the said issue 
+   * Deleting and re-creating the entire project, two days before the deadline
+   * Issues setting up the Manager node on VirtualBox, hence having to resort to using another VM on GCP
+   
+      <a name="improvements"></a>
+ ## 7.3. Future Improvements 
+ 
+  * Further development of the front end of the application
+  * Integrating testing within Jenkins script
+  * More test cases implemented, testing the fuctionality of the randomising button amongst them 
+  * Increasing coverage report
+  * NGINX implementation
+  * CRUD implementation 
+  * Selenium testing 
+  
+  
+    
