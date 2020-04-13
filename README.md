@@ -136,7 +136,7 @@ A risk matrix is a matrix that is used during the risk assessment process to def
    
 ![alt text][VMs]
  
-[servicediagram]:  https://i.imgur.com/tqVx3GB.png "VM architecture"
+[VMs]:  https://i.imgur.com/tqVx3GB.png "VM architecture"
 
   
    
