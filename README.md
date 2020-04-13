@@ -246,6 +246,11 @@ Now go back to GCP and create another virtual machine, with the same UBUNTU 18.0
 
 Create a new firewall rule named jenkins, and navigate to the part where it allows you to set specified protocols and ports. Here you tick the first option, and you set it to 8080 to allow jenkins to function on your other machines. Create one more firewall rule named flaskapp and for this one allow a range of ip addressess, from 5000 to 5004. 
 
-Now navigate back to your master VM, press edit, and make sure to add your firewall rules to the network tags section. Before you press save, bring back the public key saved from before, and add it in the SSH keys section. Now save the VM. Before you go back to the main VM list, in the top right corner you can press "create similar" and now you have a third VM, this one having the same set up as the previous one. Call this one worker. 
+Now navigate back to your master VM, press edit, and make sure to add your firewall rules to the network tags section. Before you press save, bring back the public key saved from before, and add it in the SSH keys section. Now save the VM. Before you go back to the main VM list, in the top right corner you can press "create similar" and now you have a third VM, this one having the same set up as the previous one. Call this one worker. Before any further steps, ensure you have openjdk-8 installed on all your VMs using this command "sudo apt install openjdk-8-jdk -y".
 
-Once all your VMs are set up, go into your master node, and clone down the repository found at this [address](...)
+Once all your VMs are set up, go into your master node, and clone down the repository found at this [address](https://github.com/Adelina09/SFIA2.git). Similarly, go into the manager node and clone down this other [repository](https://github.com/Adelina09/SFIA2-Ansible.git). Ensure you change your IP addresses and the location of your own private keys in the inventory.cfg file before running any commands. 
+
+After setting up your IP addresses, run the ansible playbook. This will install all the dependencies needded for your application to function. Now you can run the docker compose file from the master VM and now you will have the application running. 
+
+If you want to set up the Jenkins pipeline, follow [these steps](https://dzone.com/articles/jenkins-03-configure-master-and-slave) to set your nodes, and then follow the usual steps to create the pipeline. Don't forget to set the agents to none in the Jenkinsfile and to mention on which VM you want the stage to take place. 
+
