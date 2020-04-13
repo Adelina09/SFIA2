@@ -148,9 +148,10 @@ A risk matrix is a matrix that is used during the risk assessment process to def
 
   The application has initially been constructed on the master node, where the testing of the application has also been performed. After having a simple model of the application, docker has been installed on the local machine, and images of the services have been created and deployed on Docker Hub. The Docker compose file has been created, services deployed, followed by the creation of a docker stack. This has connected the master node to a worker node, and thus the services have been deployed between the two nodes to ensure redundancy. This has all then been automated using Jenkins on the manager node. To ensure that all the nodes have the necessary dependencies installed, Ansible has also been added to the manager node. Thus Jenkins deploys Ansible across the other two nodes and starts the application. 
   The process is shown in the diagram below. 
-   
- INSERT DIAGRAM HERE
+  
+   ![alt text][deployment]
  
+[deployment]:  https://i.imgur.com/gXvmckU.png  "Application deployment"
  
    <a name="technologies"></a>
   ## 4.4. Technologies Used
