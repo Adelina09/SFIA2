@@ -19,6 +19,7 @@ pipeline {
                     sh './script/docker.sh'
                 }
             }
+            
             stage('Testing Environment'){
             agent {label 'manager_node'}
             steps{

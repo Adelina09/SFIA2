@@ -1,6 +1,6 @@
 #!/bin/bash
 source ~/.bashrc
-source /var/lib/jenkins/workspace/pipeline/venv/bin/activate
+source ./venv/bin/activate
 
 pip3 install pytest
 pip3 install coverage
