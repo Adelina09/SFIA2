@@ -1,4 +1,4 @@
 #!/bin/bash
 
 source ~/.bashrc
-docker stack deploy --compose-file docker_compose.yml stackdemo
+sudo docker stack deploy --compose-file docker_compose.yml stackdemo
