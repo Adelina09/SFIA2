@@ -168,7 +168,8 @@ A risk matrix is a matrix that is used during the risk assessment process to def
    
      <a name="testing"></a>
  ## 5.Testing
-   The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The image below represents the final test coverage of the application. It can be observed that the coverage stops at only 38%. It is believed that this is due to a combination of a high number of libraries tested and a limited amount of test functions implemented. 
+   The application has been tested using pytest. The unit testing conducted includes URL as well as database testing. The latter consists of testing the select, insert and delete function by inserting a test sample and manipulating it to test the functions. 
+   The image below represents the final test coverage of the application. It can be observed that the coverage stops at only 38%. It is believed that this is due to a combination of a high number of libraries tested and a limited amount of test functions implemented. 
    
    ![alt text][tests]
  
