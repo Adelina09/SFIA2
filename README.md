@@ -17,6 +17,8 @@ Projet aiming to return to the user a random short story idea, with the aid of m
 4. [Architecture](#architecture)
 
    4.1. [Feature Branch Model](#featurebranchmodel)
+   
+   4.2. [Service Architecture Diagram](#servicediagram)
 
    
 5. [Testing](#testing)
@@ -104,12 +106,16 @@ A risk matrix is a matrix that is used during the risk assessment process to def
  ## 4. Architecture
  
    <a name="featurebranchmodel"></a>
- ## 4.1 Feature Branch Model
+ ## 4.1. Feature Branch Model
  The project consists of 2 branches, to ensure code quality across the duration of the project. These branches can be observed in the figure below, the main one being the master branch, and the one on which the new features were added before the final delivery of the project, the developer branch. 
  
  ![alt text][featurebranch]
  
 [featurebranch]:   https://i.imgur.com/DGnFz6i.png " Feature Branch Model"
 
- The project starts at point A, with a basic architecture of the four services on the master branch as a clean starting point. The developer branch is then created at point B, and all the features are then created on this branch, up until point C, where it is merged back into the master branch. Point D finally represents the final stage of the process. 
+ The project starts at point A, with a basic architecture of the four services on the master branch as a clean starting point. The developer branch is then created at point B, and all the features are then created on this branch, up until point C, where it is merged back into the master branch. Point D finally represents the final stage of the process. As the project consists of three virtual machines, the same process has been followed for the Jenkins node, up until the final commit, when it has been merged onto this repository, to have a full overview of the project in one place. 
  
+   <a name="servicediagram"></a>
+ ## 4.2. Service Architecture Diagram
+ 
+ ADD SERVICE ARCHITECTURE DIAGRAM
