@@ -19,15 +19,19 @@ Projet aiming to return to the user a random short story idea, with the aid of m
    4.1. [Feature Branch Model](#featurebranchmodel)
    
    4.2. [Service Architecture Diagram](#servicediagram)
+   
+   4.3. [Deployment](#deployment)
 
    
 5. [Testing](#testing)
 
-6. [Deployment](#deployment)
+6. [Front End Design](#design)
 
-7. [Front End Design](#design)
+7. [Retrospective](#retrospective)
 
-8. [Future Improvements](#improvements)
+   7.1. [What Went Well?](#good)
+   7.2. [What Went Wrong?](#bad)
+   7.3. [Future Improvements](#improvements)
 
 
 <a name="brief"></a>
@@ -118,4 +122,26 @@ A risk matrix is a matrix that is used during the risk assessment process to def
    <a name="servicediagram"></a>
  ## 4.2. Service Architecture Diagram
  
- ADD SERVICE ARCHITECTURE DIAGRAM
+   The application consists of four services as shown in the image below. The first service is responsible of hosting the front end of the application, as well as of ensuring there is an active connection with a MySql database to ensure data persistency. 
+   The second and third services are simply generating two random parts of a story, chosen from a set list, which are then merged together into one string in the fourth service. This is then recalled by the first service, added to the database and displayed then to the user. 
+ 
+ 
+![alt text][servicediagram]
+ 
+[servicediagram]:  https://i.imgur.com/e5s7yRS.png " Risk Assessment Matrix"
+
+   <a name="deployment"></a>
+ ## 4.3. Deployment
+   The deployment of the application uses the toolsets covered in training, focusing on the application's ability to scale the resources needed, as well as its portability. The application rests on three virtal machines: a manager one, a master node and a worker node. This approach has been chosen due to its modularity and ease of maintenance. The master node comprises of Jenkins and Ansible and aims to deploy the necessary dependencies onto the master node. A jenkins pipeline has been implemented, this consisting of installing the set dependencies and deploying the Docker Stack onto the manager and worker node. The architecture of the VMs can be observed in the figure below. 
+   
+![alt text][VMs]
+ 
+[servicediagram]:  https://i.imgur.com/tqVx3GB.png "VM architecture"
+
+  
+   
+    
+   
+   
+   
+   
