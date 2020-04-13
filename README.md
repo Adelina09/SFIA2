@@ -235,7 +235,7 @@ As a future update on the front end, it is desired that the content saved in the
 [newtrello]:    https://i.imgur.com/8tsyBEJ.png "Improvements Sprint"
  
 
-    <a name="installation"></a>
+   <a name="installation"></a>
  ## 8. Installation guide 
 ### Before Installation
 
